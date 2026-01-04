@@ -1,0 +1,33 @@
+# Source files
+credentials/
+nodes/
+test/
+scripts/
+index.ts
+
+# Config files
+.eslintrc.js
+.prettierrc
+tsconfig.json
+jest.config.js
+
+# IDE
+.idea/
+.vscode/
+
+# Git
+.git/
+.gitignore
+
+# Documentation (keep README.md)
+COMMERCIAL_LICENSE.md
+LICENSING_FAQ.md
+
+# Test artifacts
+coverage/
+*.test.ts
+
+# Development
+node_modules/
+*.log
+.env*
