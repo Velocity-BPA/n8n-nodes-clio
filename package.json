@@ -1,74 +1,74 @@
 {
-	"name": "n8n-nodes-clio",
-	"version": "1.0.0",
-	"description": "A comprehensive n8n community node for Clio legal practice management providing 16 resources and 70+ operations for matters, contacts, time tracking, billing, documents, and trust accounting.",
-	"license": "BUSL-1.1",
-	"author": {
-		"name": "Velocity BPA",
-		"email": "licensing@velobpa.com",
-		"url": "https://velobpa.com"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/Velocity-BPA/n8n-nodes-clio.git"
-	},
-	"homepage": "https://github.com/Velocity-BPA/n8n-nodes-clio",
-	"keywords": [
-		"n8n",
-		"n8n-community-node-package",
-		"clio",
-		"legal",
-		"practice-management",
-		"billing",
-		"time-tracking",
-		"trust-accounting",
-		"law-firm",
-		"legal-tech"
-	],
-	"main": "dist/nodes/Clio/Clio.node.js",
-	"n8n": {
-		"n8nNodesApiVersion": 1,
-		"credentials": [
-			"dist/credentials/ClioOAuth2Api.credentials.js"
-		],
-		"nodes": [
-			"dist/nodes/Clio/Clio.node.js",
-			"dist/nodes/Clio/ClioTrigger.node.js"
-		]
-	},
-	"scripts": {
-		"build": "tsc && gulp build:icons",
-		"dev": "tsc --watch",
-		"lint": "eslint . --ext .ts --ignore-pattern test/",
-		"lint:fix": "eslint . --ext .ts --fix --ignore-pattern test/",
-		"test": "jest",
-		"test:coverage": "jest --coverage",
-		"clean": "rm -rf dist/",
-		"prepublishOnly": "npm run build"
-	},
-	"devDependencies": {
-		"@types/jest": "^29.5.12",
-		"@types/node": "^20.11.0",
-		"@typescript-eslint/eslint-plugin": "^7.0.0",
-		"@typescript-eslint/parser": "^7.0.0",
-		"eslint": "^8.57.0",
-		"eslint-config-prettier": "^9.1.0",
-		"eslint-plugin-n8n-nodes-base": "^1.16.1",
-		"eslint-plugin-prettier": "^5.1.3",
-		"gulp": "^4.0.2",
-		"jest": "^29.7.0",
-		"n8n-workflow": "^1.30.0",
-		"prettier": "^3.2.5",
-		"ts-jest": "^29.1.2",
-		"typescript": "^5.3.3"
-	},
-	"peerDependencies": {
-		"n8n-workflow": ">=1.0.0"
-	},
-	"engines": {
-		"node": ">=18.0.0"
-	},
-	"files": [
-		"dist/**/*"
-	]
+  "name": "n8n-nodes-clio",
+  "version": "1.0.0",
+  "description": "A comprehensive n8n community node for Clio legal practice management providing 16 resources and 70+ operations for matters, contacts, time tracking, billing, documents, and trust accounting.",
+  "license": "BUSL-1.1",
+  "author": {
+    "name": "Velocity BPA",
+    "email": "licensing@velobpa.com",
+    "url": "https://velobpa.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Velocity-BPA/n8n-nodes-clio.git"
+  },
+  "homepage": "https://github.com/Velocity-BPA/n8n-nodes-clio",
+  "keywords": [
+    "n8n",
+    "n8n-community-node-package",
+    "clio",
+    "legal",
+    "practice-management",
+    "billing",
+    "time-tracking",
+    "trust-accounting",
+    "law-firm",
+    "legal-tech"
+  ],
+  "main": "dist/nodes/Clio/Clio.node.js",
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/ClioOAuth2Api.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/Clio/Clio.node.js",
+      "dist/nodes/Clio/ClioTrigger.node.js"
+    ]
+  },
+  "scripts": {
+    "build": "tsc && gulp build:icons",
+    "dev": "tsc --watch",
+    "lint": "eslint . --ext .ts --ignore-pattern test/",
+    "lint:fix": "eslint . --ext .ts --fix --ignore-pattern test/",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "clean": "rm -rf dist/",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-n8n-nodes-base": "^1.16.1",
+    "eslint-plugin-prettier": "^5.1.3",
+    "gulp": "^4.0.2",
+    "jest": "^29.7.0",
+    "n8n-workflow": "*",
+    "prettier": "^3.2.5",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.3.3"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "dist/**/*"
+  ]
 }
